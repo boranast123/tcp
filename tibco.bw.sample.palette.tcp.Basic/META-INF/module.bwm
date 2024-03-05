@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:tcpconnection="http://ns.tibco.com/bw/palette/tcpconnection" xmi:id="_gjrIUNbVEeqxUpEzFZI2jw" targetNamespace="http://tns.tibco.com/bw/composite/tibco.bw.sample.palette.tcp.Basic" name="tibco.bw.sample.palette.tcp.Basic" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_hCtNsNbVEeqxUpEzFZI2jw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDJSkNbVEeqxUpEzFZI2jw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDTDkNbVEeqxUpEzFZI2jw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDTDkdbVEeqxUpEzFZI2jw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDTDktbVEeqxUpEzFZI2jw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDc0kNbVEeqxUpEzFZI2jw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDc0kdbVEeqxUpEzFZI2jw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDl-gNbVEeqxUpEzFZI2jw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_hDl-gdbVEeqxUpEzFZI2jw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8JxvoOdSEeq5ieyPsNC4fQ" name="TEXT_MODE_USERDEFINED_SEP_PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8J7goOdSEeq5ieyPsNC4fQ" name="BINARY_MODE_ITERATION_PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8J7goedSEeq5ieyPsNC4fQ" name="Output_File" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8KFRoOdSEeq5ieyPsNC4fQ" name="TEXT_MODE_PREDEFINED_SEP_PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8KFRoedSEeq5ieyPsNC4fQ" name="HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8KFRoudSEeq5ieyPsNC4fQ" name="BINARY_MODE_BINARY_SEP_PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8KFRo-dSEeq5ieyPsNC4fQ" name="BINARY_MODE_NO_SEP_PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DEmzwOdTEeq5ieyPsNC4fQ" name="BINARY_MODE_ITERATION_CONNECTION" type="tcpconnection:tcpconnection" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DEmzwedTEeq5ieyPsNC4fQ" name="TEXT_MODE_USERDEFINED_SEP_CONNECTION" type="tcpconnection:tcpconnection" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DEwkwOdTEeq5ieyPsNC4fQ" name="BINARY_MODE_NO_SEP_CONNECTION" type="tcpconnection:tcpconnection" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DEwkwedTEeq5ieyPsNC4fQ" name="TEXT_MODE_PREDEFINED_SEP_CONNECTION" type="tcpconnection:tcpconnection" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DEwkwudTEeq5ieyPsNC4fQ" name="BINARY_MODE_BINARY_SEP_CONNECTION" type="tcpconnection:tcpconnection" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_t8XnwNbVEeqxUpEzFZI2jw" name="ComponentServer" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_t8Zc8NbVEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.binarySeparator.Server"/>
+  </sca:component>
+  <sca:component xmi:id="_5wU-ANbVEeqxUpEzFZI2jw" name="ComponentClient" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5wU-AdbVEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.binarySeparator.Client"/>
+  </sca:component>
+  <sca:component xmi:id="_CveDQNbWEeqxUpEzFZI2jw" name="ComponentServer1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CveDQdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.iterationLoop.Server1"/>
+  </sca:component>
+  <sca:component xmi:id="_JOQEkNbWEeqxUpEzFZI2jw" name="ComponentClient1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_JOQEkdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.iterationLoop.Client1"/>
+  </sca:component>
+  <sca:component xmi:id="_ULz-UNbWEeqxUpEzFZI2jw" name="ComponentServer2" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ULz-UdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.noSeparator.Server2"/>
+  </sca:component>
+  <sca:component xmi:id="_a6qb8NbWEeqxUpEzFZI2jw" name="ComponentClient2" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_a6qb8dbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.basic.binaryMode.noSeparator.Client2"/>
+  </sca:component>
+  <sca:component xmi:id="_kmExUNbWEeqxUpEzFZI2jw" name="ComponentServer3" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kmExUdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.textMode.preDefinedSeparator.Server3"/>
+  </sca:component>
+  <sca:component xmi:id="_rrc4kNbWEeqxUpEzFZI2jw" name="ComponentClient3" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_rrc4kdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.textMode.preDefinedSeparator.Client3"/>
+  </sca:component>
+  <sca:component xmi:id="_0MBygNbWEeqxUpEzFZI2jw" name="ComponentServer4" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_0MBygdbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.textMode.userDefinedSeparator.Server4"/>
+  </sca:component>
+  <sca:component xmi:id="__Z-RoNbWEeqxUpEzFZI2jw" name="ComponentClient4" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__Z-RodbWEeqxUpEzFZI2jw" processName="tibco.bw.sample.palette.tcp.textMode.userDefinedSeparator.Client4"/>
+  </sca:component>
+</sca:composite>
